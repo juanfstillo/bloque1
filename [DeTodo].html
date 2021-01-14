@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//9-[DeTodo]
+/*
+Crear un script que permita al usuario ingresar un número y muestre la tabla de multiplicar y la suma de los mismos.
+*/
+const numero = parseInt(prompt("Ingrese el numero deseado para ver su tabla"));
+let suma=0;
+const productos = [];
+for (let i = 1; i < 10; i++) {
+    let producto = (numero * i);
+    productos.push(producto);
+    document.write(`${numero} * ${i} = ${producto}`);
+    suma = suma + producto;
+    document.write("<br>");
+}
+document.write(`La suma de ${productos.join(" + ")} es ${suma}`);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//4-[Apus]
+// Crear un script que permita simular de forma muy básica el mecanismo de una caja registradora. 
+// El usuario debe insertar el nombre del producto, la cantidad y el precio unitario. 
+// En la pantalla mostrar: “Gracias por comprar x unidades de x articulo. Total: Total a abonar.
+
+let nombreProducto = prompt("Ingrese nombre del producto");
+let cantidadProducto = parseInt(prompt(`Ingrese la cantidad de productos ${nombreProducto} a comprar`));
+let precioUnitario = parseInt(prompt(`Ingrese el precio unitario del productos ${nombreProducto} a comprar`))
+let precioFinal= cantidadProducto*precioUnitario;
+
+document.write(`Gracias por comprar ${cantidadProducto} unidades de ${nombreProducto}<br> 
+Total a abonar $ ${precioFinal}` );
+
+
+
+
+    </script>
+</body>
+</html>

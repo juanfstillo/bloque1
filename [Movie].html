@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//6-[Movie]
+/*
+
+Se ingresan por teclado 4 números, si todos los valores ingresados son menores a 23, imprimir en la página ‘Todos los números son menores al número establecido. 
+
+*/
+
+const numeros = [];
+let contador = 0;
+for (let i = 1; i < 5; i++) {
+    let numeroIngresado = parseInt(prompt(`Ingrese un numero para la posicion ${i}`));
+    numeroIngresado < 23? numeros.push(numeroIngresado) && contador++: null;
+}
+
+contador === 4? document.write("Todos los números son menores al número establecido"):document.write("Hay números mayores al número establecido");
+numeros.forEach(numero => console.log(numero));
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
